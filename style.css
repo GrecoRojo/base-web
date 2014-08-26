@@ -1,0 +1,107 @@
+/* ----- Base ----- */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ----- estilos propios ----- */
+
+/* ----- Media Queries ----- */
+@media only screen and (min-width: 480px) {
+	/* -- */
+	body{
+		background-color: red;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/* -- */
+	body{
+		background-color: blue;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+	/* -- */
+	body{
+		background-color: peru;
+	}
+}
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+}
+
+/* ----- Helpers ----- */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
